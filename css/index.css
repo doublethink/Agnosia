@@ -1,0 +1,29 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 10;
+}
+
+#color-container {
+	width: 155px;
+	height: 31px;
+}
+
+.ui-border-grids {
+	border-color: black;
+	border-width: 1.5px;
+	border-style: solid;
+	border-radius: 3px;
+	padding: 1.5px;
+	margin: 12px;
+}
+
+.ui-div-color {
+	float: left;
+	height: 28px;
+	width: 28px;
+	margin: 1.5px;
+	background-color: red;
+	border-color: black;
+}
+
