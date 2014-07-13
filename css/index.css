@@ -23,7 +23,7 @@ html, body {
 	height: 28px;
 	width: 28px;
 	margin: 1.5px;
-	background-color: red;
-	border-color: black;
+	box-sizing: border-box;
+	border: thin solid black;
 }
 
