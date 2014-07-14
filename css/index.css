@@ -27,3 +27,7 @@ html, body {
 	border: thin solid black;
 }
 
+#grid-container {
+	width : 400px;
+	height: 400px;
+}
