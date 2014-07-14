@@ -24,13 +24,11 @@ function populateGrid(gridSize) {
 	// get container height and width
 	var gridContainer = $("#grid-container");
 	var gridDimensions = [parseInt(gridContainer.css("width")),parseInt(gridContainer.css("height"))];
-	gridDimensions[0] -= parseInt(gridContainer.css("margin"));
-	gridDimensions[1] -= parseInt(gridContainer.css("margin"));
 
 	// calculate nodes dimensions
 	var nodeDimensions = [gridDimensions[0]/gridSize[0], gridDimensions[1]/gridSize[1]];
 	var nodeDiv = "<div class='ui-div-node div-node' style='float:left;border:thin solid black;width:"+ nodeDimensions[0] 
-					+"px;height:"+ nodeDimensions[1] +"px;'></div>";
+					+"px;height:"+ nodeDimensions[1] +"px;box-sizing:border-box;'></div>";
 
 	for (var i = 0; i < gridSize[0]*gridSize[1]; i++){
 		gridContainer.append(nodeDiv);
